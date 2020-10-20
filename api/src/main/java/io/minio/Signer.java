@@ -78,6 +78,7 @@ class Signer {
   private static final Set<String> IGNORED_HEADERS = new HashSet<>();
 
   static {
+    IGNORED_HEADERS.add("accept-encoding");
     IGNORED_HEADERS.add("authorization");
     IGNORED_HEADERS.add("content-type");
     IGNORED_HEADERS.add("content-length");
